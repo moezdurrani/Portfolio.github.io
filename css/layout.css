@@ -64,7 +64,8 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   /* background: #161415 url(../images/header-background.jpg) no-repeat top center; */
+   background: #161415 url(../images/Image01.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -83,7 +84,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -271,6 +272,7 @@ ul#nav li.current a { color: #F06000; }
 .intro-info .lead {
   text-align: left;
   padding-left: 13rem;
+  margin-left: 2rem;
 }
 
 .about-content {
@@ -635,6 +637,63 @@ ul#nav li.current a { color: #F06000; }
    color: black;
 }
 
+.models{
+  background-color: white;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.models #portfolio{
+  width: 100%;
+  background-color: white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#portfolio .container{
+
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  background-color:white;
+  box-shadow: 6px 4px 4px 4px rgba(0,0,0, 0.5);
+  padding: 0.5%;
+  border-radius: 2%;
+  max-height: 600px;
+ 
+}
+#portfolio .left{
+  background-color: white;
+  width: 80%;
+}
+#portfolio .right{
+  width: 20%;
+  overflow: scroll;
+  padding: 2%;
+  background-color: white;
+}
+#portfolio iframe{
+  width: 100%;
+  height: 110%;
+}
+
+.right::-webkit-scrollbar {
+  display: none;
+}
+.post-container img{
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 2px 2px 2px rgba(0,0,0, 0.5) ;
+}
+
+
+
+
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
@@ -766,6 +825,10 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal a:hover {	color: #00CCCC; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
+
+/* ------------------------------------------------------------------ */
+/* 3D Models Section
+/*
 
 /* fadein/fadeout effect for modal popup
 /* ------------------------------------------------------------------ */

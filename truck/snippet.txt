@@ -1,0 +1,1 @@
+<model-viewer src="truck.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.84" exposure="0.49" shadow-softness="0.56" environment-image="whipple_creek_regional_park_04_1k.hdr"> </model-viewer>

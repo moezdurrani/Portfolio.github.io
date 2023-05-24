@@ -1,0 +1,1 @@
+<model-viewer src="spinner.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.67" environment-image="whipple_creek_regional_park_04_1k.hdr" min-camera-orbit="auto auto 2322m" min-field-of-view="30deg" exposure="1" shadow-softness="0.54"> </model-viewer>
