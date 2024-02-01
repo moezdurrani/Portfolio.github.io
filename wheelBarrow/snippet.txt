@@ -1,1 +1,0 @@
-<model-viewer src="wheelBarrow.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="whipple_creek_regional_park_04_1k.hdr"> </model-viewer>
