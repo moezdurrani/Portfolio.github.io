@@ -24,6 +24,7 @@ a {
 a:hover {
   color: #37b3ed;
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1,
@@ -244,7 +245,7 @@ h6 {
 # Home Section
 --------------------------------------------------------------*/
 .homeSection {
-  margin-left: 30vh;
+  margin-left: 30vh; /* This might be problematic for smaller screens */
 }
 
 #hero {
@@ -252,16 +253,13 @@ h6 {
   height: 100vh;
   background: rgb(255, 255, 255);
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  /* background: url("../images/mountains3.jpg") top center; 
-  background-size: cover; */
+  justify-content: center;
+  align-items: center;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
 #hero:before {
-  /* content: ""; */
   background: rgba(201, 191, 191, 0.3);
   position: absolute;
   bottom: 0;
@@ -269,10 +267,9 @@ h6 {
   left: 0;
   right: 0;
   z-index: 1;
-
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-background {
@@ -298,29 +295,30 @@ h6 {
   z-index: 1;
 }
 
-
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
   color: rgb(40, 44, 59);
+  text-align: center; /* Ensure text is centered */
 }
 
 .homeSection h2 {
   color: rgb(48, 45, 45);
+  text-align: center; /* Ensure text is centered */
 }
 
-#hero a{
+#hero a {
   color: rgb(23, 27, 41);
 }
 
-#hero a:hover{
+#hero a:hover {
   color: rgb(16, 160, 61);
   transition: 0.3s;
 }
-/* Icons */
 
+/* Icons */
 #iconscontact {
   padding-left: 30%;
   padding-right: 30%;
@@ -329,13 +327,12 @@ h6 {
 }
 
 .homeSection a i {
-  font-size: 30px; 
+  font-size: 30px;
 }
 
-.homeSection .iconscontact{
+.homeSection .iconscontact {
   color: red;
 }
-
 
 #hero p {
   color: #fff;
@@ -359,16 +356,31 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 40px;
     line-height: 36px;
+    text-align: center; /* Ensure text is centered on smaller screens */
   }
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    text-align: center; /* Ensure text is centered on smaller screens */
+  }
+
+  .homeSection {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    padding: 0 10px; /* Add padding for better alignment */
+    text-align: center; /* Ensure content is centered on smaller screens */
+  }
+
+  #iconscontact {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center; /* Center icons on smaller screens */
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -449,6 +461,58 @@ section {
   padding-top: 30px;
   padding-bottom: 10px;
 }
+
+.aboutOuter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Optional: add gap between columns */
+}
+
+.aboutOuter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+
+.aboutInner {
+  flex: 1 1 45%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center; 
+  box-sizing: border-box;
+  padding: 0px; 
+  min-width: 300px; 
+  text-align: center; 
+}
+
+.aboutInner h3{
+  font-weight: 500;
+  color: #173b6c;
+}
+
+.innerDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left; 
+}
+
+.innerDetails .info{
+  color: rgb(223, 105, 42);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.innerDetails .answer{
+  font-weight: 600;
+  color: #363636;
+}
+
+
+
+
 
 
 /*--------------------------------------------------------------
