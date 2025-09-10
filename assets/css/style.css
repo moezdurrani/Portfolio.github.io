@@ -514,6 +514,25 @@ section {
   color: #363636;
 }
 
+.moreContent.scrollable {
+  max-height: 300px; /* adjust height */
+  overflow-y: auto;
+  padding-right: 10px; /* space for scrollbar */
+}
+
+/* Optional: scrollbar styling */
+.moreContent.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+.moreContent.scrollable::-webkit-scrollbar-thumb {
+  background-color: #149ddd;
+  border-radius: 10px;
+}
+.moreContent.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
 
 
 
